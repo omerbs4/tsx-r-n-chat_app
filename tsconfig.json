@@ -1,6 +1,14 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "paths": {
+      "@firebase/*": ["./node_modules/@firebase/*"],
+      "@react-native-firebase/*": ["./node_modules/@react-native-firebase/*"],
+      "@react-native-firebase/app": ["./node_modules/@react-native-firebase/app"],
+      "@react-native-firebase/auth": ["./node_modules/@react-native-firebase/auth"],
+      "@/*": ["./*"]
+    }
+    
   }
 }
